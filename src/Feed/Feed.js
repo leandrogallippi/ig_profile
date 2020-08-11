@@ -14,6 +14,7 @@ const images = [firstImage, secondImage, thirdImage, fourthImage, fifthImage, si
 const comments = [
   'comentario corto',
   'comentario mediano mediano mediano mediano mediano',
+  'palabralargaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
   'comentario largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largocomentario largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo largo'
 ];
 
@@ -34,7 +35,7 @@ export function Feed() {
   }
 
   return (
-    <article className="feed-content">
+    <article className="feed">
       { totalImages.map((image, index) => <FeedPhoto key={index.toString()} src={image} onClick={openModal(image)} />)}
       <Modal show={Boolean(currentImage)} onClose={onClose}><FeedPhotoDetail src={currentImage} comments={comments.concat(comments)} /></Modal>
     </article>

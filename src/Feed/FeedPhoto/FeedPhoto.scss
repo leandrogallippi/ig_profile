@@ -1,24 +1,13 @@
 .feed-photo {
   cursor: pointer;
-  flex-basis: calc(calc(100% / 3) - var(--gutter));
 
-  &:before {
-    content: '';
+  img {
     display: block;
-    padding-top: 100%;
+    width: var(--block);
+    height: var(--block);
+    object-fit: cover;
   }
 
-  &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+  // Minimal undo, still needs to undo complentary classes.
+  display: initial;
 }

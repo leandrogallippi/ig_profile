@@ -1,13 +1,5 @@
-:root {
-  --color-white: white;
-  --color-black: black;
-  --color-gray: #dbdbdb;
-  --color-gray-darker: #8e8e8e;
-  --color-link: #00376b;
-  --color-text-main: #262626;
-  --border: 1px solid var(--color-gray);
-  --font-weight-bold: 600;
-}
+// Root props
+@import "props";
 
 body {
   margin: 0;

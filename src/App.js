@@ -9,7 +9,7 @@ function App() {
     <section>
       <Header />
       <main>
-        <div className="section-content main-content">
+        <div className="section-content">
           <Profile />
           <Feed />
         </div>
